@@ -10,6 +10,7 @@
   --sunny-gradient: linear-gradient(90deg, #FFDB00 -13.32%, #FF8900 105.84%);
   --gray-color: #2D2D2D;
   --black-color: #141414;
+  --secondary-color: #020c5a;
 }
 
 * {

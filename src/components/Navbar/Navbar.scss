@@ -1,0 +1,125 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 55px;
+
+    &__logo img {
+        width: 85%;
+    }
+
+    &__links {
+        display: flex;
+        gap: 80px;
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+
+            a {
+                color: var(--black-color);
+                position: relative;
+
+                &:hover {
+                    color: var(--secondary-color);
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: var(--secondary-color);
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+
+            button {
+                width: 150px;
+                height: 50px;
+                border: none !important;
+                border-radius: 13px;
+                background: var(--blue-gradient);
+                color: var(--bgprimary-color);
+                font-weight: 500;
+                letter-spacing: 0.5px;
+            }
+        }
+
+
+    }
+
+    .nav__links {
+        font-size: 32px;
+        color: var(--gray-color);
+        cursor: pointer;
+        display: none;
+
+        &:hover {
+            color: var(--black-color);
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .navbar {
+        padding: 24px 16px;
+
+        &__links {
+            background-color: var(--primary-color);
+            box-shadow: 0px 30px 21px rgba(207, 185, 151, 0.3);
+            width: 100%;
+            padding: 24px 10px;
+            font-size: 17px;
+
+
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            top: 55px;
+            right: 0%;
+            gap: 12px;
+
+            transition: 0.8s all ease-in-out;
+
+            a {
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 32px;
+                align-items: center;
+            }
+
+            button {
+                margin-top: 16px;
+                width: 15rem;
+            }
+        }
+
+        &__links.toggle {
+            top: 85px;
+            right: 0%;
+            display: flex;
+        }
+
+        .nav__links {
+            display: block;
+        }
+    }
+}
