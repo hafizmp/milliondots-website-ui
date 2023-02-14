@@ -1,0 +1,110 @@
+.testimonial {
+    padding: 55px 80px;
+    background-color: var(--bgsecondary-color);
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 40px;
+
+        .test-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            max-width: 520px;
+            height: 100vh;
+
+            .testbtn {
+                background-color: #E3F8FA;
+                text-align: center;
+                padding: 11px 20px;
+                border-radius: 12px;
+            }
+
+            & h3 {
+                font-size: 38px;
+            }
+
+            & p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 31px;
+            }
+
+            & button {
+                padding: 7px 24px;
+                border-radius: 13px;
+                border: none;
+                background: var(--blue-gradient);
+                color: var(--bgprimary-color);
+            }
+        }
+
+        .test-accords {
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+
+            .accord {
+                max-width: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: var(--bgprimary-color);
+                box-shadow: 0px 20px 40px rgba(209, 209, 209, 0.28);
+                border-radius: 20px;
+                padding: 30px;
+
+                .profile {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 15px;
+
+                    .name {
+                        h6 {
+                            font-size: 16px;
+                        }
+
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .testimonial {
+
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            gap: 4rem;
+
+            .test-content {
+                align-items: center;
+
+                & h3, p {
+                    text-align: center;
+                }
+
+                & h3 {
+                    font-size: 30px;
+                }
+            }
+
+            .test-accords {
+
+                .accord {
+                    justify-content: space-between;
+                    gap: 25px;
+                }
+            }
+        }
+    }
+}

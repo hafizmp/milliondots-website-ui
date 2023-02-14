@@ -9,7 +9,7 @@ function App() {
     <Hero />
     <About />
     <Services />
-    {/* <Testimonials /> */}
+    <Testimonials />
     {/* <Enroll /> */}
     {/* <Contact /> */}
     {/* <Footer /> */}

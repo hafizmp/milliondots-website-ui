@@ -45,25 +45,25 @@ const Service = () => {
                 <div className="iconarea" style={{ background: "#7A50F9" }}>
                   <GiEarthAmerica color='white' size={38} />
                 </div>
-                <h6>Join us from <br /> anywhere in the world.</h6>
+                <h6>Join us from anywhere in the world.</h6>
               </div>
               <div className="i-card">
                 <div className="iconarea" style={{ background: "#05CD99" }}>
                   <AiFillPlaySquare color='white' size={30} />
                 </div>
-                <h6>Learn with live & video <br /> sessions from mentors.</h6>
+                <h6>Learn with live & video sessions from mentors.</h6>
               </div>
               <div className="i-card">
                 <div className="iconarea" style={{ background: "#00B0C6" }}>
                   <IoIosPeople color='white' size={35} />
                 </div>
-                <h6>Trade together within <br />trader's ecosystem <br />monitored my mentors</h6>
+                <h6>Trade together within trader's ecosystem monitored my mentors</h6>
               </div>
               <div className="i-card">
                 <div className="iconarea" style={{ background: "#FF8900" }}>
                   <MdAreaChart color='white' size={35} />
                 </div>
-                <h6>Earn experience from <br />losses and money from <br />profits</h6>
+                <h6>Earn experience from losses and money from profits</h6>
               </div>
             </div>
           </div>
