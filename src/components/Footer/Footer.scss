@@ -11,7 +11,6 @@ footer {
         & h5 {
             font-weight: 400;
             font-size: 14px;
-            line-height: 54px;
         }
     }
 
@@ -36,11 +35,13 @@ footer {
     
         .copyright {
             & h5 {
-                font-size: 12px;
+                font-size: 11px;
+                text-align: center;
             }
         }
     
         .footer-links {
+            gap: 20px;
             & a {
                 color: var(--bgsecondary-color);
                 font-size: 12px;
