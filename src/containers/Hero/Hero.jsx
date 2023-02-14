@@ -4,7 +4,7 @@ import { images } from "../../constants";
 
 const Hero = () => {
   return (
-    <div className='hero'>
+    <section className='hero'>
       <div className="hero__container">
         <div className="content">
           <h1>Want to be a successful trader ?</h1>
@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
       </div>
         <img className='vector' src={images.lineVector} alt="lv" />
-    </div>
+    </section>
   )
 }
 
