@@ -1,0 +1,112 @@
+.enroll {
+    padding: 75px 80px;
+    background-color: var(--bgprimary-color);
+
+    &__container {
+
+        .en-box {
+            padding: 90px 75px;
+            background: var(--hot-gradient);
+            max-width: 1171px;
+            height: 590px;
+            margin: auto;
+            border-radius: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .en-details {
+
+                & h1 {
+                    font-size: 9rem;
+                    font-weight: 900;
+                    color: var(--bgsecondary-color);
+                }
+
+                & p {
+                    max-width: 293px;
+                    color: var(--bgprimary-color);
+                }
+            }
+
+            .en-form {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+
+                & img {
+                    width: 30%;
+                }
+
+                & h3 {
+                    color: var(--bgprimary-color);
+                    max-width: 270px;
+                    font-size: 38px;
+                    line-height: 46px;
+                    letter-spacing: 0.77px;
+                }
+
+                & span {
+                    color: var(--bgprimary-color);
+                    font-size: 16px;
+                }
+
+                & button {
+                    background-color: var(--bgprimary-color);
+                    border-radius: 13px;
+                    padding: 7px 60px;
+                    border: none;
+                    color: #FE7C0F;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .enroll {
+        padding: 75px 40px;
+
+        &__container {
+
+            .en-box {
+                height: auto;
+                padding: 50px 35px;
+                flex-direction: column;
+                align-items: center;
+                gap: 3rem;
+
+                .en-details {
+
+                    & h1 {
+                        font-size: 8rem;
+                        text-align: center;
+                    }
+
+                    & p {
+                        text-align: center;
+                    }
+                }
+
+                .en-img img {
+                    width: 60%;
+                    margin: auto;
+                }
+
+                .en-form {
+                    align-items: center;
+
+                    & img {
+                        width: 20%;
+                    }
+
+                    & h3 {
+                        font-size: 28px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -10,6 +10,8 @@ import award from "../assets/award 1.png"
 import serviceImg from "../assets/service-img-1.png"
 import hand from "../assets/Image-748.png"
 import avatar from "../assets/avatar.png"
+import contactImg from "../assets/home7-img-3.png"
+import ribbon from "../assets/ribbon.png"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -24,5 +26,7 @@ export default {
     award,
     serviceImg,
     hand,
-    avatar
+    avatar,
+    contactImg,
+    ribbon
 }
