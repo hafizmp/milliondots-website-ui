@@ -12,7 +12,7 @@ function App() {
     <Testimonials />
     <Enroll />
     <Contact />
-    {/* <Footer /> */}
+    <Footer />
     </>
   );
 }
