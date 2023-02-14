@@ -12,6 +12,7 @@ import hand from "../assets/Image-748.png"
 import avatar from "../assets/avatar.png"
 import contactImg from "../assets/home7-img-3.png"
 import ribbon from "../assets/ribbon.png"
+import stars from "../assets/rating.png"
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -28,5 +29,6 @@ export default {
     hand,
     avatar,
     contactImg,
-    ribbon
+    ribbon,
+    stars
 }

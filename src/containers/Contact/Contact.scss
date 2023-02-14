@@ -1,0 +1,122 @@
+.contact {
+    background-color: var(--gray-color);
+    color: var(--bgprimary-color);
+    padding: 70px 90px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .c-links {
+            & h2 {
+                max-width: 525px;
+                font-size: 40px;
+            }
+
+            .contacts {
+                display: flex;
+                gap: 2.5rem;
+
+                .links {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+
+                    .icons {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                    }
+
+                    & h4 {
+                        font-weight: 500;
+                        font-size: 26px;
+                        line-height: 54px;
+                    }
+                }
+            }
+
+
+        }
+
+        .c-rating {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-around;
+
+            & h2 {
+                font-size: 74px;
+                font-weight: 700;
+                text-align: right;
+            }
+
+            & p {
+                font-size: 16px;
+                text-align: right;
+            }
+
+            & img {
+                width: 55%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contact {
+        padding: 80px 90px;
+        height: 80vh;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .c-links {
+                display: flex;
+                gap: 1rem;
+                flex-direction: column;
+
+                & h2 {
+                    text-align: center;
+                    font-size: 30px;
+                }
+
+                .contacts {
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    align-items: flex-start;
+
+                    .links {
+                        gap: 20px;
+
+                        & h4 {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+
+            }
+
+            .c-rating {
+                gap: 15px;
+                align-items: center;
+
+                & h2 {
+                    font-size: 64px;
+                }
+            }
+        }
+    }
+}
