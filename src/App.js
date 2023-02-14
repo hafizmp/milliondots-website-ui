@@ -8,7 +8,7 @@ function App() {
     <Navbar />
     <Hero />
     <About />
-    {/* <Services /> */}
+    <Services />
     {/* <Testimonials /> */}
     {/* <Enroll /> */}
     {/* <Contact /> */}

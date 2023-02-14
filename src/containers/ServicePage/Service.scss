@@ -1,0 +1,266 @@
+.service {
+    padding: 75px 80px;
+    background: var(--blue-gradient);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+
+        .service-head {
+            color: var(--bgprimary-color);
+
+            h1 {
+                max-width: 560px;
+                font-weight: 500;
+                font-size: 45px;
+                line-height: 60px;
+                margin-bottom: 36px;
+            }
+
+            p {
+                max-width: 900px;
+                font-size: 16px;
+                line-height: 29px;
+            }
+        }
+
+        .service-details {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .membership-card {
+                position: relative;
+                padding: 67px 77px 0 77px;
+                width: 440px;
+                height: 609px;
+                border-radius: 30px;
+                background-color: var(--bgprimary-color);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                & img {
+                    position: absolute;
+                    top: -40px;
+                }
+
+                .heading h1 {
+                    max-width: 250px;
+                    text-align: center;
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+
+                .line {
+                    width: 49px;
+                    height: 4px;
+                    border-radius: 30px;
+                    background-color: #EDEDED;
+                }
+
+                .lists {
+                    ul li {
+                        margin-bottom: 23px;
+                    }
+
+                    ul li::before {
+                        content: "\2022";
+                        color: #05CD99;
+                        font-weight: 900;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0 0 30px 30px;
+                    height: 81px;
+                    width: 440px;
+                    background: var(--sunny-gradient);
+
+                    & h5 {
+                        font-weight: 700;
+                        font-size: 24px;
+                        color: var(--bgprimary-color);
+                    }
+                }
+            }
+
+            .services-info {
+                display: flex;
+                flex-direction: column;
+                gap: 60px;
+
+                .info-cards {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 30px;
+
+                    .i-card {
+                        display: flex;
+                        gap: 38px;
+                        align-items: center;
+
+                        padding: 25px;
+                        width: 318px;
+                        height: 119px;
+                        border-radius: 18px;
+                        background: var(--bgprimary-color);
+
+                        .iconarea {
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            width: 64px;
+                            height: 64px;
+                            border-radius: 50%;
+                        }
+
+                        & h6 {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .service {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+
+            .service-head {
+
+                h1 {
+                    text-align: center;
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 29px;
+                }
+            }
+
+            .service-details {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 7rem;
+
+                .membership-card {
+                    width: 360px;
+                    height: 609px;
+                    align-items: center;
+
+                    .line {
+                        width: 49px;
+                        height: 4px;
+                        border-radius: 30px;
+                        background-color: #EDEDED;
+                        margin: 10px 0;
+                    }
+
+                    .price {
+                        width: 360px;
+                    }
+                }
+
+                .services-info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 50px;
+
+                    .info-cards {
+                        grid-template-columns: repeat(1, auto);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .service {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+
+            .service-head {
+
+                h1 {
+                    text-align: center;
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 29px;
+                }
+            }
+
+            .service-details {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 7rem;
+
+                .membership-card {
+                    width: 320px;
+                    height: 680px;
+                    align-items: center;
+
+                    .line {
+                        width: 49px;
+                        height: 4px;
+                    }
+
+                    .price {
+                        width: 320px;
+                    }
+                }
+
+                .services-info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 50px;
+
+                    .info-cards {
+                        grid-template-columns: repeat(1, auto);
+
+                        .i-card {
+                            gap: 20px;
+                            width: 280px;
+
+                            & h6 {
+                                font-weight: 600;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
